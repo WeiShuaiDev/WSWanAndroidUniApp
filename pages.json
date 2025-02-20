@@ -1,0 +1,85 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/project/project",
+			"style": {
+				"navigationBarTitleText": "项目"
+			}
+		},
+		{
+			"path": "pages/square/square",
+			"style": {
+				"navigationBarTitleText": "广场"
+			}
+		},
+		{
+			"path": "pages/publis/publis",
+			"style": {
+				"navigationBarTitleText": "公众号"
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "WSWanAndroidUniApp",
+		"navigationBarBackgroundColor": "#2979FF",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#909399",
+		"selectedColor": "#303133",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/tab/tab_home.png",
+				"selectedIconPath": "static/tab/tab_home.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/project/project",
+				"iconPath": "static/tab/tab_project.png",
+				"selectedIconPath": "static/tab/tab_project.png",
+				"text": "项目"
+			},
+			{
+				"pagePath": "pages/square/square",
+				"iconPath": "static/tab/tab_square.png",
+				"selectedIconPath": "static/tab/tab_square.png",
+				"text": "公众号"
+			},
+			{
+				"pagePath": "pages/public/publis",
+				"iconPath": "static/tab/tab_publis.png",
+				"selectedIconPath": "static/tab/tab_publis.png",
+				"text": "体系"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/tab/tab_mine.png",
+				"selectedIconPath": "static/tab/tab_mine.png",
+				"text": "我的"
+			}
+		]
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^nut-(.*)?-(.*)": "@/uni_modules/nutui-uni/components/$1$2/$1$2.vue",
+			"^nut-(.*)": "@/uni_modules/nutui-uni/components/$1/$1.vue"
+		}
+	},
+	"uniIdRouter": {}
+}
